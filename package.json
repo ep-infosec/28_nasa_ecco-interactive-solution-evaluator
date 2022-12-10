@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "globe.gl": "^2.26.1",
+    "plotly.js": "^2.8.3",
+    "plotly.js-dist": "^2.8.3"
+  },
+  "name": "ecco-interactive-solution-evaluator",
+  "description": "ECCO Interactive Solution Evaluator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx snowpack dev",
+    "build": "npx snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasa/ecco-interactive-solution-evaluator.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nasa/ecco-interactive-solution-evaluator/issues"
+  },
+  "homepage": "https://github.com/nasa/ecco-interactive-solution-evaluator#readme",
+  "devDependencies": {}
+}

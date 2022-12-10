@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='styles.css'>
+  <!-- Imports -->
+  <script src="//unpkg.com/globe.gl"></script>
+  <script src="https://cdn.plot.ly/plotly-2.8.3.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src='./colormap.js'></script>
+  <script async src='./globe.js'></script>
+  <script async src='./index.js'></script>
+</head>
+<body>
+  <!-- Header -->
+  <div>
+    <div id="imgLogo" class="img-logo-container">
+      <img src="assets/Tribrand_Logo.png" class="img-logo">
+    </div>
+    <div class="text-logo-container">
+      <h1>ECCO-Interactive-Solution-Evaluator</h1>
+    </div>
+  </div>
+  <div id="plotNav" class="sidenav">
+  </div>
+  <!-- Plot Div -->
+  <ion-icon name="list-outline" onclick='openNav("plotNav")' class='nav-btn' id="navButton"></ion-icon>
+  <!-- Globe display -->
+  <div id="globeViz"></div>
+  <div id="plot-container">
+    <div id="plotGraph" class="plot-display">
+      <ion-icon name="arrow-forward-outline" id='plot-closebtn' class="closebtn" onclick="closePlot('plotGraph')"></ion-icon>
+      <ion-icon name="arrow-back-outline" id='plot-openbtn' class="openbtn" onclick="openPlot('plotGraph')"></ion-icon>
+    </div>
+    <div class="plotButton-display" id="plotButtonContainer">
+      <button onclick="averageGraph(plotData)">Average</button>
+      <button onclick="subtractGraph(plotData)">Subtract</button>
+      <button onclick="squareGraph(plotData)">Square</button>       
+      <button onclick="originalGraph()">Original</button>
+    </div>
+  </div>
+</body>
+</html>
